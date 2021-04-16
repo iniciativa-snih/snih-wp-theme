@@ -52,47 +52,55 @@ src="https://www.facebook.com/tr?id=156814846272508&ev=PageView&noscript=1"
 
 		<header id="masthead" class="site-header clearfix" role="banner">
 
-			<div id="header-top" class="header-bar-wrap">
+			<!-- <div id="header-top" class="header-bar-wrap">
 
 				<?php get_template_part( 'template-parts/header-bar' ); ?>
 
-			</div>
+			</div> -->
 
-			<div class="header-main clearfix">
+			<div class="header-main">
 
-				<div id="logo" class="site-branding clearfix">
+				<div class="header-main__nav">
+					<div id="logo" class="site-branding">
 
-					<?php merlin_site_logo(); ?>
+						<?php merlin_site_logo(); ?>
+
+					</div><!-- .site-branding -->
+
+
+
+					<nav id="main-navigation" class="primary-navigation navigation" role="navigation">
+					<?php
+						// Display Main Navigation
+						wp_nav_menu( array(
+							'theme_location' => 'primary',
+							'container' => false,
+							'menu_class' => 'main-navigation-menu',
+							'echo' => true,
+							'fallback_cb' => 'merlin_default_menu',
+											) );
+					?>
+					</nav><!-- #main-navigation -->
+				</div>
+
+				<div class="intro">
 					<?php merlin_site_title(); ?>
-                    <?php merlin_site_description(); ?>
+					<?php merlin_site_description(); ?>
+					<div class="header-widgets">
 
-				</div><!-- .site-branding -->
+						<?php // Display Header Widgets
+						if ( is_active_sidebar( 'header' ) ) :
 
-				<div class="header-widgets clearfix">
+								dynamic_sidebar( 'header' );
 
-                    <?php // Display Header Widgets
-                    if ( is_active_sidebar( 'header' ) ) :
-
-                        dynamic_sidebar( 'header' );
-
-                    endif; ?>
+						endif; ?>
 
 				</div><!-- .header-widgets -->
+				</div>
 
 			</div><!-- .header-main -->
 
-			<nav id="main-navigation" class="primary-navigation navigation clearfix" role="navigation">
-				<?php
-					// Display Main Navigation
-					wp_nav_menu( array(
-						'theme_location' => 'primary',
-						'container' => false,
-						'menu_class' => 'main-navigation-menu',
-						'echo' => true,
-						'fallback_cb' => 'merlin_default_menu',
-                    ) );
-				?>
-			</nav><!-- #main-navigation -->
+
 
 			<?php // Display Custom Header Image
 			merlin_header_image(); ?>
