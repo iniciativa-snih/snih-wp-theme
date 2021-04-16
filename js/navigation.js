@@ -186,7 +186,7 @@
 		});
 
 		/* Setup Sticky Menu for main navigation menu */
-		var menu = $( '#main-navigation' );
+		var menu = $( '.header-main__nav' );
 		var stickyNavTop = menu.offset().top;
 
 		stickyMenu = function() {
@@ -196,8 +196,10 @@
 			/* Add Sticky class */
 			if (scrollTop > stickyNavTop) {
 				menu.addClass('sticky-nav-menu');
+				document.querySelector("body").classList.add("has-sticky-header");
 			} else {
 				menu.removeClass('sticky-nav-menu');
+				document.querySelector("body").classList.remove("has-sticky-header");
 			}
 
 		}
