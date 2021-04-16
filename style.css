@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # 0.0 - Variables
 --------------------------------------------------------------*/
 :root {
-  --blue: #0c52be;
+  --blue: #0c5200;
   --light-blue: #eff4fe;
   --green: #6ab330;
   --light-green: #e7eee1;
@@ -921,7 +921,7 @@ textarea {
 .primary-navigation {
   color: #fff;
   background: transparent;
-  
+
 
 }
 
