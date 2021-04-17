@@ -22,6 +22,8 @@ $theme_options = merlin_theme_options();
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&display=swap" rel="stylesheet"> 
 
 <?php wp_head(); ?>
 	<!-- Facebook Pixel Code -->
@@ -85,16 +87,22 @@ src="https://www.facebook.com/tr?id=156814846272508&ev=PageView&noscript=1"
 				</div>
 
 				<div class="intro">
-					<?php merlin_site_title(); ?>
-					<?php merlin_site_description(); ?>
-					<div class="header-widgets">
+					<?php // merlin_site_title(); ?>
+					<?php // merlin_site_description(); ?>
+					<div class="header-widget">
+							<div>
+								<h1 class="claim title is-2">Věda proti covidu</h1>
+								<div>Prosazujeme ověřená řešení v boji s epidemií.<br>
+									Jsme tým vědců, odborníků, ale bez vás to nezvládneme.
+								</div>
+							</div>
 
 						<?php // Display Header Widgets
-						if ( is_active_sidebar( 'header' ) ) :
+						// if ( is_active_sidebar( 'header' ) ) :
 
-								dynamic_sidebar( 'header' );
+						// 		dynamic_sidebar( 'header' );
 
-						endif; ?>
+						// endif; ?>
 
 				</div><!-- .header-widgets -->
 				</div>
