@@ -689,7 +689,7 @@ textarea {
 # 8.0 - Layout Structure
 --------------------------------------------------------------*/
 .site {
-  max-width: 1190px;
+  /* max-width: 1190px; */
   width: 100%;
   margin: 0 auto;
   background: #fff;
@@ -3300,7 +3300,6 @@ object {
     top: 0;
 		left: 0;
     width: 100%;
-    max-width: 1190px;
     border-bottom: 1px solid #fff;
 		background-color: var(--blue);
 		padding: 0 3.1em;
