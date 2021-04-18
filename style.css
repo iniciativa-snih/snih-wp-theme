@@ -728,7 +728,9 @@ textarea {
 --------------------------------------------------------------*/
 .header-main {
   padding: 1em 1.3em;
-  background: var(--blue);
+  background-image: url(./images/image.png);
+  background-size: cover;
+  background-color: var(--blue);
 }
 
 .header-main__nav {
