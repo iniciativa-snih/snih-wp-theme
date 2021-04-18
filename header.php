@@ -92,11 +92,22 @@ src="https://www.facebook.com/tr?id=156814846272508&ev=PageView&noscript=1"
 					<div class="header-widgets">
 
 						<?php // Display Header Widgets
-						if ( is_active_sidebar( 'header' ) ) :
+						if(is_front_page()) { ?>
+							<aside id="text-4" class="header-widget widget_text">			
+								<div class="textwidget">
+									<h1>Věda proti covidu</h1>
+									<div>Prosazujeme ověřená řešení v boji s epidemií.<br>
+									Jsme tým vědců, odborníků, ale bez vás to nezvládneme.</div>
+								</div>
+							</aside>
+						<?php } ?>
 
-								dynamic_sidebar( 'header' );
+						<?php
+						// if ( is_active_sidebar( 'header' ) ) :
 
-						endif; ?>
+						// 		dynamic_sidebar( 'header' );
+
+						// endif; ?>
 
 				</div><!-- .header-widgets -->
 				</div>
