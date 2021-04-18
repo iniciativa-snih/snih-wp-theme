@@ -77,7 +77,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   --text-light: #fff;
 }
 
-
 /*--------------------------------------------------------------
 # 1.0 - Normalize
 --------------------------------------------------------------*/
@@ -732,12 +731,13 @@ textarea {
 }
 
 .header-main__nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
-	align-items: center;
-	padding: 0 1.8em;
-	background-color: transparent;
-	transition: background-color .3s ease
+  align-items: center;
+  padding: 0 1.8em;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
 }
 
 .site-branding {
@@ -788,8 +788,8 @@ textarea {
 }
 
 .site-branding svg {
-	max-width: 210px;
-	fill: white;
+  max-width: 210px;
+  fill: white;
 }
 
 .site-description {
@@ -802,17 +802,17 @@ textarea {
   align-items: center;
   justify-content: center;
   color: var(--text-light);
-	padding-top: 80px;
-	padding-bottom: 120px;
-	text-align: center;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 .header-widget h1 {
-	font-size: 48px;
-	margin-top: 0;
+  font-size: 48px;
+  margin-top: 0;
 }
 .header-widget p {
-	font-size: 21px;
+  font-size: 21px;
 }
 
 .header-widget ul {
@@ -937,8 +937,7 @@ textarea {
 .primary-navigation {
   color: #fff;
   background-color: transparent;
-  transition: background-color .3s ease;
-
+  transition: background-color 0.3s ease;
 }
 
 .main-navigation-toggle,
@@ -965,9 +964,9 @@ textarea {
   font-family: 'Manrope', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-size: 15px;
   font-size: 0.9375rem;
-  padding: 0 0 .5rem 0;
+  padding: 0 0 0.5rem 0;
   text-decoration: none;
-	border-bottom: 1px solid transparent;
+  border-bottom: 1px solid transparent;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
@@ -1002,13 +1001,13 @@ textarea {
 }
 
 .primary-navigation ul li + li {
-	margin-left: 26px;
+  margin-left: 26px;
 }
 
 .main-navigation-menu ul a {
   min-width: 250px;
   min-width: 16rem;
-  padding: 0 0 .5rem 0;
+  padding: 0 0 0.5rem 0;
   font-size: 14px;
   font-size: 0.875rem;
   color: #fff;
@@ -1017,7 +1016,7 @@ textarea {
   -moz-transition: none;
   -ms-transition: none;
   -o-transition: none;
-  transition: border-bottom-color .3s ease;
+  transition: border-bottom-color 0.3s ease;
 }
 
 .main-navigation-menu ul li:last-child a {
@@ -2733,7 +2732,8 @@ object {
   /* Reset */
   .main-navigation-menu li {
     float: none;
-    position: static;
+    position: static;    
+    padding: 0 0.5rem;
   }
 
   .main-navigation-menu ul,
@@ -2763,16 +2763,18 @@ object {
 
   /* Main Navigation Toggle */
   .main-navigation-toggle {
-    float: left;
+    position: absolute;
+    right: 0;
     display: inline-block;
     padding: 0.8em 1.2em;
-    background: #444;
+    background: transparent;
   }
 
   .main-navigation-toggle:hover,
-  .main-navigation-toggle:active {
+  .main-navigation-toggle:active,
+  .main-navigation-toggle:focus {
     cursor: pointer;
-    background: #2299cc;
+    background: transparent;
   }
 
   .main-navigation-toggle:after {
@@ -2789,17 +2791,21 @@ object {
     color: #fff;
   }
 
+  .primary-navigation {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    background: var(--blue);
+  }
+
   /* Main Navigation Menu */
   .main-navigation-menu {
-    float: left;
     width: 100%;
     display: none;
-    border-top: 1px solid #fff;
   }
 
   .main-navigation-menu a {
     display: block;
-    clear: left;
   }
 
   .main-navigation-menu ul {
@@ -2814,7 +2820,12 @@ object {
   .main-navigation-menu a:hover,
   .main-navigation-menu li.current-menu-item a {
     background: none;
-    text-decoration: underline;
+    
+  }
+
+  .primary-navigation ul li + li {
+    margin-top: .5rem;
+    margin-left: 0;
   }
 
   /* Mobile Submenu Dropdowns */
@@ -3298,24 +3309,24 @@ object {
     position: fixed;
     z-index: 100;
     top: 0;
-		left: 0;
+    left: 0;
     width: 100%;
     border-bottom: 1px solid #fff;
-		background-color: var(--blue);
-		padding: 0 3.1em;
+    background-color: var(--blue);
+    padding: 0 3.1em;
   }
 
   .sticky-navigation.admin-bar .sticky-nav-menu {
     top: 32px;
   }
 
-	.sticky-navigation .site-branding {
-		margin: 0.5em;
-	}
+  .sticky-navigation .site-branding {
+    margin: 0.5em;
+  }
 
-	body.has-sticky-header .header-main {
-		padding-top: 75px
-	}
+  body.has-sticky-header .header-main {
+    padding-top: 75px;
+  }
 }
 
 /*--------------------------------------------------------------

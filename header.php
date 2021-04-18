@@ -89,20 +89,14 @@ src="https://www.facebook.com/tr?id=156814846272508&ev=PageView&noscript=1"
 				<div class="intro">
 					<?php // merlin_site_title(); ?>
 					<?php // merlin_site_description(); ?>
-					<div class="header-widget">
-							<div>
-								<h1 class="claim title is-2">Věda proti covidu</h1>
-								<div>Prosazujeme ověřená řešení v boji s epidemií.<br>
-									Jsme tým vědců, odborníků, ale bez vás to nezvládneme.
-								</div>
-							</div>
+					<div class="header-widgets">
 
 						<?php // Display Header Widgets
-						// if ( is_active_sidebar( 'header' ) ) :
+						if ( is_active_sidebar( 'header' ) ) :
 
-						// 		dynamic_sidebar( 'header' );
+								dynamic_sidebar( 'header' );
 
-						// endif; ?>
+						endif; ?>
 
 				</div><!-- .header-widgets -->
 				</div>
