@@ -75,6 +75,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   --gray: #f5f5f5;
   --text-dark: #000;
   --text-light: #fff;
+  --text-hover: #dcdcdc;
 }
 
 /*--------------------------------------------------------------
@@ -530,13 +531,13 @@ a {
 
 a:link,
 a:visited {
-  color: #2299cc;
+  color: var(--text-light);
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #444;
+  color: var(--text-hover);
 }
 
 a:focus {
@@ -2385,6 +2386,100 @@ textarea {
   text-transform: uppercase;
 }
 
+/* NEW CODE NEW WEBDESIGN*/
+.footer {
+  text-align: left;
+  background-color: var(--blue);
+  color: var(--text-light);
+  padding: 45px 80px 35px 80px;
+  
+}
+
+.footer__social {
+  display: block;
+  margin: 10px 0px;
+}
+
+.footer__mail {
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+  display: block;
+  margin: 20px 0px 40px 0px;
+}
+
+.footer__rules {
+  margin-top: 20px;
+}
+.footer__rules--link {
+  text-decoration: none;
+  color: var(--text-light);
+  opacity: 70%;
+  display: block;
+  line-height: 1.25;
+}
+
+.footer__par p{
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.footer__par--opacity {
+  opacity: 70%;
+}
+
+.footer__logo {
+  max-width: 190px;
+  margin: 40px 0px 0px 0px;
+  fill: var(--text-light); /* NEFUNGUJE */
+}
+
+.footer__rules--space {
+  display: none;
+  opacity: 70%;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__social {
+      display: inline-block;
+      margin: 0px 5px;
+  }
+
+  .footer__rules--link {
+      display: inline-block;
+  }
+
+  .footer__rules--space {
+      display: inline-block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer__contact {
+      display: flex;
+  }
+
+  .footer__mail {
+    display: block;
+    margin-left: 35px;
+    position: relative;
+    bottom: 15px;
+  }
+
+  .footer--bottom {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .footer__logo {
+      position: relative;
+      margin: auto 0px;
+
+  }
+}
+
 /*--------------------------------------------------------------
 # 13.0 - Media
 --------------------------------------------------------------*/
@@ -2962,7 +3057,7 @@ object {
 @media only screen and (max-width: 50em) {
   /* Footer */
   .site-footer {
-    text-align: center;
+    text-align: left;
   }
 
   .site-footer .site-info {
