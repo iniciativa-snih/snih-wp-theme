@@ -664,7 +664,7 @@ textarea {
   float: right;
   margin-left: 1.5em;
 }
-
+       
 .aligncenter {
   clear: both;
   display: block;
@@ -1741,7 +1741,7 @@ textarea {
 .page-title,
 .entry-title {
   display: inline;
-  font-size: 28px;
+  font-size: 28px; 
   font-size: 1.75rem;
   padding: 0 0 0.1em;
   margin: 0;
@@ -2512,6 +2512,10 @@ object {
 .wp-caption img[class*='wp-image-'] {
   display: block;
   margin: 0 auto;
+}
+
+.wp-image-number {
+  border-radius: 50%;
 }
 
 .wp-caption-text {
@@ -3460,3 +3464,135 @@ object {
     display: block !important;
   }
 }
+
+/* SEKCE ODBORNÍCI - nový styl -- ZAČÁTEK */
+
+.experts {
+  margin-top: 223px;
+}
+
+.experts__logo {
+  position: absolute;
+  top: 93px;
+  left: 50%;
+  margin-left: -51.5px ;
+  height: 103px;
+  width: 93px;
+}
+
+.experts-block {
+  max-width: 800px;
+  margin: 50px auto 105px auto; 
+}
+
+.experts-block__intro {
+    margin-bottom: 40px;
+}
+
+.experts-block__profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+  grid-auto-rows: auto;
+  gap: 30px;
+  position: relative;
+}
+
+.experts-block__profile--img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  margin-left: -90px;
+}
+
+.experts-block__profile--name,
+.experts-block__profile--spec {
+  text-align: center;
+}
+
+/* jiný breakpoint než boostrap, logo se divně chovalo */
+@media screen and (min-width: 881px) {
+    .experts__logo {
+        top: 213px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+  .experts {
+      margin-top: 90px;
+  }
+  .experts-block {
+      margin: 0px auto 105px 344px; 
+  }
+
+  .experts__logo {
+      left: 0;
+      margin-left: 138px;
+  }
+
+  
+}
+/* SEKCE ODBORNÍCI - nový styl -- KONEC */
+
+/* SUBNAVIGACE - začátek */
+.elements {
+  border: 0px solid #EFF4FE;
+  border-radius: 8.4%;
+  background-color: #EFF4FE;
+  width: 268px;
+  height: 152px;
+  position: relative;
+  text-align: center;
+  margin: 0px auto 15px auto;
+}
+
+.elements__hearts {
+  margin-top: 33px;
+}
+
+.elements__junction {
+  margin-top: 31px;
+}
+
+.elements--margin-top {
+  margin-top: 10px;
+}
+
+.elements__corona {
+  margin-top: 32px;
+}
+
+.elements__lab {
+  margin-top: 31px;
+}
+
+.elements__q {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .elements-flex {
+      width: 586px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+  }
+
+  .elements {
+      margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .elements-flex {
+      width: 1150px;
+      flex-wrap: nowrap;
+      margin: 0 auto;
+  }
+}
+
+/* SUBNAVIGACE - KONEC */
+
