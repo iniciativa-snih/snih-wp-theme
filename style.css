@@ -68,7 +68,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # 0.0 - Variables
 --------------------------------------------------------------*/
 :root {
-  --blue: #0c52be;
+  --blue: #0f5bcf;
   --light-blue: #eff4fe;
   --green: #6ab330;
   --light-green: #e7eee1;
@@ -333,28 +333,31 @@ h6 {
 }
 
 h1 {
-  font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 48px;
+  font-weight: 700;
+}
+h1.extra-bold {
+  font-weight: 800;
 }
 
 h2 {
-  font-size: 28px;
-  font-size: 1.75rem;
+  font-size: 36px;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 24px;
-  font-size: 1.5rem;
+  font-weight: 800;
 }
 
 h4 {
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 21px;
+  font-weight: 800;
 }
 
 h5 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 16px;
+  font-weight: 800;
 }
 
 h6 {
@@ -531,7 +534,7 @@ a {
 
 a:link,
 a:visited {
-  color: var(--text-light);
+  color: var(--blue);
 }
 
 a:hover,
@@ -664,7 +667,7 @@ textarea {
   float: right;
   margin-left: 1.5em;
 }
-       
+
 .aligncenter {
   clear: both;
   display: block;
@@ -728,7 +731,8 @@ textarea {
 --------------------------------------------------------------*/
 .header-main {
   padding: 1em 1.3em;
-  background-image: url(./images/image.png);
+  background-image: -webkit-image-set(url('./images/Header.jpg') 1x, url('./images/Header@2x.jpg') 2x);
+  background-image: image-set(url('./images/Header.jpg') 1x, url('./images/Header@2x.jpg') 2x);
   background-size: cover;
   background-color: var(--blue);
 }
@@ -811,8 +815,8 @@ textarea {
 }
 
 .header-widget h1 {
-  font-size: 48px;
   margin-top: 0;
+  position: relative;
 }
 .header-widget p {
   font-size: 21px;
@@ -837,6 +841,7 @@ textarea {
   vertical-align: top;
   width: 100%;
   height: auto;
+  display: none;
 }
 
 /*--------------------------------------------------------------
@@ -1741,7 +1746,7 @@ textarea {
 .page-title,
 .entry-title {
   display: inline;
-  font-size: 28px; 
+  font-size: 28px;
   font-size: 1.75rem;
   padding: 0 0 0.1em;
   margin: 0;
@@ -2394,7 +2399,6 @@ textarea {
   background-color: var(--blue);
   color: var(--text-light);
   padding: 45px 80px 35px 80px;
-  
 }
 
 .footer__social {
@@ -2423,7 +2427,7 @@ textarea {
   line-height: 1.25;
 }
 
-.footer__par p{
+.footer__par p {
   margin-top: 0;
   margin-bottom: 5px;
 }
@@ -2443,24 +2447,28 @@ textarea {
   opacity: 70%;
 }
 
+.footer a:link, .footer a:visited {
+  color: var(--text-light);
+}
+
 @media screen and (min-width: 768px) {
   .footer__social {
-      display: inline-block;
-      margin: 0px 5px;
+    display: inline-block;
+    margin: 0px 5px;
   }
 
   .footer__rules--link {
-      display: inline-block;
+    display: inline-block;
   }
 
   .footer__rules--space {
-      display: inline-block;
+    display: inline-block;
   }
 }
 
 @media screen and (min-width: 992px) {
   .footer__contact {
-      display: flex;
+    display: flex;
   }
 
   .footer__mail {
@@ -2471,14 +2479,13 @@ textarea {
   }
 
   .footer--bottom {
-      display: flex;
-      justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
   }
 
   .footer__logo {
-      position: relative;
-      margin: auto 0px;
-
+    position: relative;
+    margin: auto 0px;
   }
 }
 
@@ -2833,7 +2840,7 @@ object {
   /* Reset */
   .main-navigation-menu li {
     float: none;
-    position: static;    
+    position: static;
     padding: 0 0.5rem;
   }
 
@@ -2922,11 +2929,10 @@ object {
   .main-navigation-menu a:hover,
   .main-navigation-menu li.current-menu-item a {
     background: none;
-    
   }
 
   .primary-navigation ul li + li {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-left: 0;
   }
 
@@ -3475,18 +3481,18 @@ object {
   position: absolute;
   top: 93px;
   left: 50%;
-  margin-left: -51.5px ;
+  margin-left: -51.5px;
   height: 103px;
   width: 93px;
 }
 
 .experts-block {
   max-width: 800px;
-  margin: 50px auto 105px auto; 
+  margin: 50px auto 105px auto;
 }
 
 .experts-block__intro {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .experts-block__profile {
@@ -3514,33 +3520,31 @@ object {
 
 /* jiný breakpoint než boostrap, logo se divně chovalo */
 @media screen and (min-width: 881px) {
-    .experts__logo {
-        top: 213px;
-    }
+  .experts__logo {
+    top: 213px;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .experts {
-      margin-top: 90px;
+    margin-top: 90px;
   }
   .experts-block {
-      margin: 0px auto 105px 344px; 
+    margin: 0px auto 105px 344px;
   }
 
   .experts__logo {
-      left: 0;
-      margin-left: 138px;
+    left: 0;
+    margin-left: 138px;
   }
-
-  
 }
 /* SEKCE ODBORNÍCI - nový styl -- KONEC */
 
 /* SUBNAVIGACE - začátek */
 .elements {
-  border: 0px solid #EFF4FE;
+  border: 0px solid #eff4fe;
   border-radius: 8.4%;
-  background-color: #EFF4FE;
+  background-color: #eff4fe;
   width: 268px;
   height: 152px;
   position: relative;
@@ -3575,24 +3579,62 @@ object {
 
 @media screen and (min-width: 768px) {
   .elements-flex {
-      width: 586px;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 0 auto;
+    width: 586px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .elements {
-      margin-left: 15px;
+    margin-left: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .elements-flex {
-      width: 1150px;
-      flex-wrap: nowrap;
-      margin: 0 auto;
+    width: 1150px;
+    flex-wrap: nowrap;
+    margin: 0 auto;
   }
 }
 
 /* SUBNAVIGACE - KONEC */
 
+/* SUBPAGE - HEADING */
+.subpage-heading {
+  color: var(--text-light);
+  padding-left: 2.2rem;
+}
+
+/* Heart in heading */
+.heart {
+  background-color: red;
+  display: inline-block;
+  height: 10px;
+  margin: 0 10px;
+  transform: rotate(-45deg);
+  width: 10px;
+  position: absolute;
+  top: 12px;
+  right: -17px;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  background-color: red;
+  border-radius: 50%;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+}
+
+.heart:before {
+  top: -6px;
+  left: 0;
+}
+
+.heart:after {
+  left: 6px;
+  top: 0;
+}
