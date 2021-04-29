@@ -13,6 +13,7 @@
  *
  * @param object $wp_customize / Customizer Object
  */
+
 function merlin_customize_register_post_settings( $wp_customize ) {
 
 	// Add Sections for Post Settings
@@ -22,6 +23,8 @@ function merlin_customize_register_post_settings( $wp_customize ) {
 		'panel' => 'merlin_options_panel' 
 		)
 	);
+
+       
 	
 	// Add Title for latest posts setting
 	$wp_customize->add_setting( 'merlin_theme_options[latest_posts_title]', array(
@@ -39,7 +42,7 @@ function merlin_customize_register_post_settings( $wp_customize ) {
 		'priority' => 1
 		)
 	);
-
+    
 	// Add Settings and Controls for post content
 	$wp_customize->add_setting( 'merlin_theme_options[post_content]', array(
         'default'           => 'excerpt',
