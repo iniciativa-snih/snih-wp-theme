@@ -3567,6 +3567,7 @@ object {
 
   .otto__second--flex {
       padding: 0px 30px;
+      flex: 1;
   }
   .otto__second--border-right {
       border-right: 2px solid var(--otto-line);
