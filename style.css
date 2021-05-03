@@ -76,6 +76,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   --text-dark: #000;
   --text-light: #fff;
   --text-hover: #dcdcdc;
+  --otto-line: #D8E6CD;
+  --button-light-blue: #EFF4FE;
 }
 
 /*--------------------------------------------------------------
@@ -560,16 +562,19 @@ input[type='submit'] {
   font-family: 'Manrope', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
-  color: #fff;
-  background: #2299cc;
+  color: var(--text-dark);
   border: none;
-  text-transform: uppercase;
   text-decoration: none;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  background-color: var(--button-light-blue);
+  padding: 20px;
+  border-radius: 8.4px;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 button:hover,
@@ -3460,3 +3465,261 @@ object {
     display: block !important;
   }
 }
+
+/* CÍLE - nový kod - ZAČÁTEK */
+.target {
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.target__title {
+  padding-left: 10px;
+}
+
+.target-arg__nb {
+  display: inline-block;
+  border: 0px solid var(--green);
+  border-radius: 50%;
+  width: 30px;
+  line-height: 30px;
+  background-color: green;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.target-arg__title {
+  color: green;
+}
+
+.target-arg > p,
+.target-arg > h4 {
+  margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .target-flex {
+      display: flex;
+      flex: 0 0 calc(100% / 3);
+      gap: 50px;
+  }
+
+  .target-arg {
+      width: 100%;
+  }
+}
+/* CÍLE - nový kod - KONEC */
+
+/* OTTO - nový kod - ZAČÁTEK */
+.otto {
+  border: 0px solid var(--gray);
+  background-color: var(--gray);
+  border-radius: 12px;
+  padding: 40px;
+  margin: 70px auto;
+  max-width: 1120px;
+}
+
+.otto__first--title {
+  color: var(--green);
+}
+
+.otto--bold {
+  font-weight: bold;
+}
+
+.otto__second {
+  border: 1px solid var(--light-green);
+  background-color: var(--light-green);
+  padding: 25px;
+}
+
+.otto__second--flex::after {
+  content: "";
+  display: block;
+  background-color: var(--otto-line);
+  width: 220px;
+  height: 2px;
+}
+
+.otto__third {
+  text-align: center;
+}
+
+.otto__third--24px {
+  font-size: 18px;
+  margin-bottom: -15px;
+}
+
+.otto__third--link {
+  color: #0F5BCF !important;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 1050px) {
+  .otto__second {
+      display: flex;
+  }
+
+  .otto__second--flex::after {
+      display: none;
+  }
+
+  .otto__second--flex {
+      padding: 0px 30px;
+  }
+  .otto__second--border-right {
+      border-right: 2px solid var(--otto-line);
+  }
+
+  .otto__second--title {
+      border: 0px solid var(--light-green);
+      height: 80px;
+      margin-bottom: 20px;
+  }
+
+}
+/* OTTO - nový kod - KONEC */
+
+/* ODBORNÍCI - MAIN PAGE - nový kod - ZAČÁTEK */
+.experts-mainpage {
+  max-width: 1200px;
+  margin: 70px auto 0px auto;
+}
+
+.experts-mainpage__flex > a {
+  text-decoration: none;
+}
+
+.button-new {
+  width: 268px;
+  background-color: var(--button-light-blue) !important;
+  padding: 20px;
+  border: var(--button-light-blue) !important;
+  border-radius: 8.4px;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+.button-new--hide {
+  display: none;
+}
+
+.experts-mainpage__block--ib {
+ max-width: 242px;
+}
+
+.button-new--middle {
+  position: relative;
+  left: 50%;
+  margin-left: -134px;
+}
+
+@media screen and (min-width: 768px) {
+  .button-new--hide {
+      display: block;
+  }
+
+  .experts-mainpage__flex--margin-top {
+      margin-top: 0px ;
+  }
+
+  .experts-mainpage__flex {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .experts-mainpage__flex--p {
+      max-width: 380px;
+      font-size: 21px;
+      margin-bottom: 0px;
+  }
+
+  .experts-mainpage__block {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+      grid-auto-rows: auto;
+      gap: 30px;
+      margin: 30px auto;
+  }
+
+}
+/* ODBORNÍCI - MAIN PAGE - nový kod - KONEC */
+
+/* SEKCE ODBORNÍCI - nový styl -- ZAČÁTEK */
+.experts {
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.experts__logo {
+  position: absolute;
+  top: 93px;
+  left: 50%;
+  margin-left: -51.5px ;
+}
+
+.experts-block {
+  max-width: 800px;
+  margin-top: 93px;
+  margin: 206px auto 105px auto; 
+}
+
+.experts-block__intro {
+    margin-bottom: 40px;
+}
+
+.experts-block__profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(242px, 1fr));
+  grid-auto-rows: auto;
+  gap: 30px;
+  position: relative;
+}
+
+.experts-block__profile--img {
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  position: relative;
+  left: 50%;
+  margin-left: -90px;
+}
+
+.experts-block__profile--name,
+.experts-block__profile--spec {
+  text-align: center;
+}
+
+.experts-block__profile--name {
+  color: blue; /*PROMĚNNÁ*/
+  font-size: 16px;
+  margin: 10px;
+}
+
+.experts-block__profile--spec {
+  font-size: 14px;
+  color: var(--text-dark);
+}
+
+/* DOCENTROVAT LOGO VS NADPIS */
+@media screen and (min-width: 768px) {
+
+
+  
+}
+
+@media screen and (min-width: 992px) {
+  .experts__logo {
+      position: absolute;
+      top: 257px;
+      left: 138px;
+    }
+    .experts-block {
+      margin-left: 344px;
+      margin-top: 285px;
+    }
+}
+/* SEKCE ODBORNÍCI - nový styl -- KONEC */
