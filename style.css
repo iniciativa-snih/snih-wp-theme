@@ -748,7 +748,8 @@ textarea {
 }
 
 .site-branding {
-  max-width: 100%;
+  width: 100%;
+  max-width: 190px;
   margin: 1.5em 0.5em;
 }
 
@@ -2905,12 +2906,13 @@ object {
     top: 70px;
     right: 10px;
     background: var(--blue);
+    z-index: 1000;
   }
 
   /* Main Navigation Menu */
   .main-navigation-menu {
-    width: 100%;
     display: none;
+    padding: 1rem;
   }
 
   .main-navigation-menu a {
@@ -3419,8 +3421,8 @@ object {
     top: 0;
     left: 0;
     width: 100%;
-    border-bottom: 1px solid #fff;
-    background-color: var(--blue);
+    /* border-bottom: 1px solid #fff; */
+    background-color: var(--blue); 
     padding: 0 3.1em;
   }
 

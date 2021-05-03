@@ -177,7 +177,7 @@ function merlin_scripts() {
 	$theme_version = wp_get_theme()->get( 'Version' );
 
 	// Register and Enqueue Stylesheet
-	wp_enqueue_style( 'merlin-stylesheet', get_stylesheet_uri(), array(), $theme_version );
+	wp_enqueue_style( 'merlin-stylesheet', get_stylesheet_uri(), array(), '1.4.4' );
 
 	// Register Genericons
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/css/genericons/genericons.css', array(), '3.4.1' );
