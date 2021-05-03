@@ -16,21 +16,25 @@
 	<footer id="colophon" class="footer site-footer clearfix footer" role="contentinfo">
         <div class="footer__contact">           
 			<div>
-				<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
-					<title>Facebook</title>
-					<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						<g id="Common/Footer" transform="translate(-80.000000, -45.000000)" fill-rule="nonzero">
-							<g id="Sociální-sítě" transform="translate(80.000000, 44.000000)">
-								<g id="Facebook" transform="translate(0.000000, 1.000000)">
-									<circle id="Oval" fill="#1977F3" cx="19.5" cy="19.5" r="19.5"/>
-									<path d="M25.9506903,25.3079948 L26.7790927,19.7391 L21.5930309,19.7391 L21.5930309,16.1258191 C21.5930309,14.6035824 22.3162393,13.1165574 24.6410256,13.1165574 L27,13.1165574 L27,8.37649629 C27,8.37649629 24.8593031,8 22.8132807,8 C18.5424063,8 15.7495069,10.6652687 15.7495069,15.4947138 L15.7495069,19.7391 L11,19.7391 L11,25.3079948 L15.7495069,25.3079948 L15.7495069,38.7670599 C16.7015122,38.9214504 17.6771861,39 18.6712689,39 C19.6653517,39 20.6410256,38.9187418 21.5930309,38.7670599 L21.5930309,25.3079948 L25.9506903,25.3079948 Z" id="Path" fill="#FFFFFF"/>
+				<a href="https://www.facebook.com/IniciativaSnih">
+					<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
+							<title>Facebook</title>
+							<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<g id="Common/Footer" transform="translate(-80.000000, -45.000000)" fill-rule="nonzero">
+									<g id="Sociální-sítě" transform="translate(80.000000, 44.000000)">
+										<g id="Facebook" transform="translate(0.000000, 1.000000)">
+											<circle id="Oval" fill="#1977F3" cx="19.5" cy="19.5" r="19.5"/>
+											<path d="M25.9506903,25.3079948 L26.7790927,19.7391 L21.5930309,19.7391 L21.5930309,16.1258191 C21.5930309,14.6035824 22.3162393,13.1165574 24.6410256,13.1165574 L27,13.1165574 L27,8.37649629 C27,8.37649629 24.8593031,8 22.8132807,8 C18.5424063,8 15.7495069,10.6652687 15.7495069,15.4947138 L15.7495069,19.7391 L11,19.7391 L11,25.3079948 L15.7495069,25.3079948 L15.7495069,38.7670599 C16.7015122,38.9214504 17.6771861,39 18.6712689,39 C19.6653517,39 20.6410256,38.9187418 21.5930309,38.7670599 L21.5930309,25.3079948 L25.9506903,25.3079948 Z" id="Path" fill="#FFFFFF"/>
+										</g>
+									</g>
 								</g>
 							</g>
-						</g>
-					</g>
-				</svg>
+						</svg>
+					</a>
+				
 			
-				<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
+				<a href="https://www.instagram.com/iniciativasnih/">
+					<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="39px" viewBox="0 0 39 39" version="1.1">
 					<title>Instagram</title>
 					<defs>
 						<radialGradient cx="26.5626266%" cy="107.702106%" fx="26.5626266%" fy="107.702106%" r="99.107386%" id="radialGradient-1">
@@ -57,31 +61,36 @@
 						</g>
 					</g>
 				</svg>
-			
-				<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="39px" viewBox="0 0 40 39" version="1.1">
-					<title>YouTube</title>
-					<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						<g id="Common/Footer" transform="translate(-130.000000, -45.000000)">
-							<g id="Sociální-sítě" transform="translate(80.000000, 44.000000)">
-								<g id="YouTube" transform="translate(50.000000, 1.000000)">
-									<ellipse id="Oval" fill="#FF0000" cx="20" cy="19.5" rx="20" ry="19.5"/>
-									<polygon id="polygon9" fill="#FFFFFF" fill-rule="nonzero" points="29 19.5 14 11 14 28"/>
+				</a>
+
+
+				<a href="https://www.youtube.com/channel/UCmGuWmyzdbwk83xyOLQgsEg">			
+					<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40px" height="39px" viewBox="0 0 40 39" version="1.1">
+						<title>YouTube</title>
+						<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Common/Footer" transform="translate(-130.000000, -45.000000)">
+								<g id="Sociální-sítě" transform="translate(80.000000, 44.000000)">
+									<g id="YouTube" transform="translate(50.000000, 1.000000)">
+										<ellipse id="Oval" fill="#FF0000" cx="20" cy="19.5" rx="20" ry="19.5"/>
+										<polygon id="polygon9" fill="#FFFFFF" fill-rule="nonzero" points="29 19.5 14 11 14 28"/>
+									</g>
 								</g>
 							</g>
 						</g>
-					</g>
-				</svg>
+					</svg>
+				</a>
 			
-
-				<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" viewBox="0 0 38 38" version="1.1">
-					<title>Icons/Social - Spotify</title>
-					<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-						<g id="Icons/Social---Spotify">
-							<circle id="Oval" fill="#1ED760" cx="19" cy="19" r="19"/>
-							<path d="M27.4081895,25.7936273 C27.9655061,26.1361199 28.1410121,26.8687305 27.8001907,27.4292973 C27.4593693,27.991687 26.7317552,28.1678326 26.1748915,27.8251121 C21.7215672,25.0863106 16.1162439,24.4678642 9.51495214,25.9850404 C8.87882766,26.1320182 8.24496777,25.7307345 8.09980729,25.0906402 C7.95396743,24.4507738 8.35117724,23.8127303 8.98866047,23.666664 C16.2127156,22.0047887 22.4093245,22.7200809 27.4081895,25.7936273 Z M29.6342855,20.1877321 C30.3292894,20.6184114 30.5480492,21.5344595 30.1207203,22.2331171 C29.6920326,22.9333698 28.7821187,23.1528111 28.0868883,22.7230433 C22.9906458,19.5708808 15.2190117,18.6575672 9.18952997,20.499234 C8.40779209,20.7371331 7.58189462,20.2932371 7.34456516,19.507988 C7.10882091,18.7213716 7.54973739,17.8916872 8.33034297,17.6526488 C15.2183324,15.5493842 23.7807626,16.5679749 29.6342855,20.1877321 Z M32.1314534,13.7526083 C32.9745618,14.255979 33.2508422,15.3515907 32.7512728,16.1983655 C32.2512504,17.0462797 31.1617542,17.3261073 30.3209104,16.8225087 C24.2078651,13.1694821 14.1245334,12.8335978 8.2889009,14.6157899 C7.3515854,14.9017701 6.36059903,14.3694595 6.07684539,13.4267504 C5.79263883,12.4831297 6.32119509,11.4866426 7.25918996,11.1999788 C13.9580858,9.15391017 25.0940008,9.54904135 32.1314534,13.7526083 Z" id="Combined-Shape" fill="#FFFFFF"/>
+				<a href="https://open.spotify.com/show/5yDZvjyJL3VI0zmCjoHMdA?si=so_iuF_LR0G-fnMMzAU0rQ">
+					<svg class="footer__social" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38px" height="38px" viewBox="0 0 38 38" version="1.1">
+						<title>Icons/Social - Spotify</title>
+						<g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Icons/Social---Spotify">
+								<circle id="Oval" fill="#1ED760" cx="19" cy="19" r="19"/>
+								<path d="M27.4081895,25.7936273 C27.9655061,26.1361199 28.1410121,26.8687305 27.8001907,27.4292973 C27.4593693,27.991687 26.7317552,28.1678326 26.1748915,27.8251121 C21.7215672,25.0863106 16.1162439,24.4678642 9.51495214,25.9850404 C8.87882766,26.1320182 8.24496777,25.7307345 8.09980729,25.0906402 C7.95396743,24.4507738 8.35117724,23.8127303 8.98866047,23.666664 C16.2127156,22.0047887 22.4093245,22.7200809 27.4081895,25.7936273 Z M29.6342855,20.1877321 C30.3292894,20.6184114 30.5480492,21.5344595 30.1207203,22.2331171 C29.6920326,22.9333698 28.7821187,23.1528111 28.0868883,22.7230433 C22.9906458,19.5708808 15.2190117,18.6575672 9.18952997,20.499234 C8.40779209,20.7371331 7.58189462,20.2932371 7.34456516,19.507988 C7.10882091,18.7213716 7.54973739,17.8916872 8.33034297,17.6526488 C15.2183324,15.5493842 23.7807626,16.5679749 29.6342855,20.1877321 Z M32.1314534,13.7526083 C32.9745618,14.255979 33.2508422,15.3515907 32.7512728,16.1983655 C32.2512504,17.0462797 31.1617542,17.3261073 30.3209104,16.8225087 C24.2078651,13.1694821 14.1245334,12.8335978 8.2889009,14.6157899 C7.3515854,14.9017701 6.36059903,14.3694595 6.07684539,13.4267504 C5.79263883,12.4831297 6.32119509,11.4866426 7.25918996,11.1999788 C13.9580858,9.15391017 25.0940008,9.54904135 32.1314534,13.7526083 Z" id="Combined-Shape" fill="#FFFFFF"/>
+							</g>
 						</g>
-					</g>
-				</svg>
+					</svg>
+				</a>
 			</div>
 			
             <a class="footer__mail" href="mailto:info@iniciativa-snih.cz">info@iniciativa-snih.cz</a>
@@ -92,7 +101,7 @@
                 <div>
                     <div class="footer__par">
                         <p >© 2021 Iniciativa Sníh, všechna práva vyhrazena</p>
-                        <p >Stránky běží na systému Wordpress<span class="footer__par--opacity">  •  </span>zpracoval Radek Matěj, design Filip Rojík</p>
+                        <p >Stránky běží na systému Wordpress<span class="footer__par--opacity">  •  </span>zpracovala Petra Shaker, design Filip Rojík</p>
                     </div>
                 
                 
